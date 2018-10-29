@@ -1,0 +1,4 @@
+CREATE DATABASE LINK postgres CONNECT TO postgres IDENTIFIED BY postgres USING 'debugPostgres';
+
+//select * from pg_stat_user_tables;
+//select * from pg_stat_user_tables@postgres;

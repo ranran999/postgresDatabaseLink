@@ -1,0 +1,30 @@
+XE =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = %hostname%)(PORT = %port%))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = XE)
+    )
+  )
+
+EXTPROC_CONNECTION_DATA =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = IPC)(KEY = EXTPROC_FOR_XE))
+    )
+    (CONNECT_DATA =
+      (SID = PLSExtProc)
+      (PRESENTATION = RO)
+    )
+  )
+
+
+#ADD ODBC
+debugPostgres =
+   (DESCRIPTION =
+     (ADDRESS = (PROTOCOL = TCP)(HOST = %hostname%)(PORT = %port%))
+     (CONNECT_DATA =
+       (SID = debugPostgres)
+     )
+     (HS = OK)
+   )

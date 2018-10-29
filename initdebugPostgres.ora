@@ -1,0 +1,23 @@
+ # This is a sample agent init file that contains the HS parameters that are
+ # needed for the Database Gateway for ODBC
+ 
+ #
+ # HS init parameters
+ #
+ HS_FDS_CONNECT_INFO=debugPostgres
+ #HS_FDS_TRACE_LEVEL = DEBUG
+ #HS_FDS_SHAREABLE_NAME=/usr/lib64/psqlodbcw.so
+ HS_FDS_SHAREABLE_NAME=/usr/lib64/libodbc.so
+ #HS_FDS_SHAREABLE_NAME=/usr/pgsql-9.4/lib/psqlodbc.so
+ #HS_FDS_SHAREABLE_NAME=/usr/pgsql-9.4/lib/psqlodbcw.so
+ 
+ #
+ # ODBC specific environment variables
+ #
+ set ODBCINI=/etc/odbc.ini
+ 
+ 
+ #
+ # Environment variables required for the non-Oracle system
+ #
+ # set <envvar>=<value>
