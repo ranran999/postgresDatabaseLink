@@ -20,11 +20,9 @@ EXTPROC_CONNECTION_DATA =
 
 
 #ADD ODBC
-debugPostgres =
-   (DESCRIPTION =
-     (ADDRESS = (PROTOCOL = TCP)(HOST = %hostname%)(PORT = %port%))
-     (CONNECT_DATA =
-       (SID = debugPostgres)
-     )
-     (HS = OK)
-   )
+PG_LINK  =
+  (DESCRIPTION=
+    (ADDRESS=(PROTOCOL=tcp)(HOST = %hostname%)(PORT = %port%))
+    (CONNECT_DATA=(SID=PG_LINK))
+    (HS=OK)
+  )

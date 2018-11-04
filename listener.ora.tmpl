@@ -8,13 +8,11 @@ SID_LIST_LISTENER =
       (ORACLE_HOME = /u01/app/oracle/product/11.2.0/xe)
       (PROGRAM = extproc)
     )
-    #ADD ODBC LISTENER
-    (SID_DESC=
-       (SID_NAME=debugPostgres)
-       (ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe)
-       (PROGRAM=debugPostgres)
-        (ENVS=LD_LIBRARY_PATH=/usr/lib64/:$ORACLE_HOME/lib)
-     )
+    (SID_DESC =
+       (SID_NAME=PG_LINK)
+       (ORACLE_HOME = /u01/app/oracle/product/11.2.0/xe)
+       (PROGRAM=dg4odbc)
+    )
   )
 
 LISTENER =

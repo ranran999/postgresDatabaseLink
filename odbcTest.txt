@@ -1,0 +1,3 @@
+ODBCINI=/etc/odbc.ini
+export ODBCINI
+isql -v debugPostgres

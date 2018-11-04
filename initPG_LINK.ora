@@ -1,0 +1,9 @@
+
+ HS_FDS_CONNECT_INFO = PG_LINK
+ HS_FDS_TRACE_LEVEL = 0
+ HS_FDS_SHAREABLE_NAME= /usr/lib/x86_64-linux-gnu/odbc/psqlodbcw.so
+ HS_NLS_NCHAR = UCS2
+ HS_LANGUAGE=AL32UTF8
+
+ set ODBCINI=/etc/odbc.ini
+ 
